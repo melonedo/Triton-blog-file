@@ -1,5 +1,5 @@
 // --cse
-// 'builtin.module' operation
+// CSE ('builtin.module' operation)
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

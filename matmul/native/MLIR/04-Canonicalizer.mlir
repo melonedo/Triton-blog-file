@@ -1,5 +1,5 @@
 // --canonicalize
-// 'tt.func' operation: @matrix_multiplication_kernel
+// Canonicalizer ('tt.func' operation: @matrix_multiplication_kernel)
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

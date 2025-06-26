@@ -1,5 +1,5 @@
 // --canonicalize
-// 'tt.func' operation: @triton.language.standard.zeros____(0, 0)cconstexpr_128__(0, 1)cconstexpr_64__(1,)cconstexpr_fp32_
+// Canonicalizer ('tt.func' operation: @triton.language.standard.zeros____(0, 0)cconstexpr_128__(0, 1)cconstexpr_64__(1,)cconstexpr_fp32_)
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

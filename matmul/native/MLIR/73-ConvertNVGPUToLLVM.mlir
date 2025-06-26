@@ -1,5 +1,5 @@
 // --convert-nv-gpu-to-llvm
-// 'builtin.module' operation
+// ConvertNVGPUToLLVM ('builtin.module' operation)
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 #loc1 = loc(unknown)

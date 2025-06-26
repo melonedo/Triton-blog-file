@@ -1,5 +1,5 @@
 // --triton-reorder-broadcast
-// 'builtin.module' operation
+// TritonReorderBroadcast ('builtin.module' operation)
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

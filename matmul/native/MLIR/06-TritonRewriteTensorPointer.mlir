@@ -1,5 +1,5 @@
 // --triton-rewrite-tensor-pointer
-// 'builtin.module' operation
+// TritonRewriteTensorPointer ('builtin.module' operation)
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

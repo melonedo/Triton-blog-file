@@ -1,5 +1,5 @@
 // --convert-warp-specialize-to-llvm
-// 'builtin.module' operation
+// ConvertWarpSpecializeToLLVM ('builtin.module' operation)
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 #loc1 = loc(unknown)

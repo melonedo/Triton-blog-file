@@ -1,5 +1,5 @@
 // --triton-combine
-// 'builtin.module' operation
+// TritonCombineOps ('builtin.module' operation)
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {
