@@ -23,3 +23,6 @@ for idx, match in enumerate(pattern.finditer(content)):
     print(f"// {title}\n\n{body}", file=fp)
     item = f"{pass_name}"
     title = f"--{pass_key}\n// {item} ({operation})"
+
+fp = open(f"{idx+2:02d}-{item}.mlir", "w")
+print(f"// {title}\n", file=fp)
