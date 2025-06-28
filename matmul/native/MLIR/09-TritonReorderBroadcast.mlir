@@ -1,5 +1,6 @@
-// --triton-reorder-broadcast
-// TritonReorderBroadcast ('builtin.module' operation)
+// Next run Pass --cse
+// IR Dump After TritonReorderBroadcast ('builtin.module' operation)
+// Current Run Pass --triton-reorder-broadcast
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

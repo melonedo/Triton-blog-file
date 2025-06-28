@@ -1,5 +1,6 @@
-// --tritongpu-coalesce
-// TritonGPUCoalesce ('builtin.module' operation)
+// Next run Pass --tritongpu-F32DotTC
+// IR Dump After TritonGPUCoalesce ('builtin.module' operation)
+// Current Run Pass --tritongpu-coalesce
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [1, 32], warpsPerCTA = [2, 2], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1], threadsPerWarp = [32], warpsPerCTA = [4], order = [0]}>

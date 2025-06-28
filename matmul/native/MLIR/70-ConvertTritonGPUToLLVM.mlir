@@ -1,5 +1,6 @@
-// --convert-triton-gpu-to-llvm
-// ConvertTritonGPUToLLVM ('builtin.module' operation)
+// Next run Pass --canonicalize
+// IR Dump After ConvertTritonGPUToLLVM ('builtin.module' operation)
+// Current Run Pass --convert-triton-gpu-to-llvm
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [32, 1], warpsPerCTA = [4, 1], order = [1, 0]}>
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)

@@ -1,5 +1,6 @@
-// --convert-warp-specialize-to-llvm
-// ConvertWarpSpecializeToLLVM ('builtin.module' operation)
+// Next run Pass --reconcile-unrealized-casts
+// IR Dump After ConvertWarpSpecializeToLLVM ('builtin.module' operation)
+// Current Run Pass --convert-warp-specialize-to-llvm
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 #loc1 = loc(unknown)

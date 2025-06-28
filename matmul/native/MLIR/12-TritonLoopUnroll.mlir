@@ -1,5 +1,6 @@
-// --triton-loop-unroll
-// TritonLoopUnroll ('builtin.module' operation)
+// Next run Pass --convert-triton-to-tritongpu
+// IR Dump After TritonLoopUnroll ('builtin.module' operation)
+// Current Run Pass --triton-loop-unroll
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

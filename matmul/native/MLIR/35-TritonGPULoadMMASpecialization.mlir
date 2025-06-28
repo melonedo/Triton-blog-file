@@ -1,5 +1,6 @@
-// --tritongpu-load-mma-specialization
-// TritonGPULoadMMASpecialization ('builtin.module' operation)
+// Next run Pass --tritongpu-rewrite-partition-dependencies
+// IR Dump After TritonGPULoadMMASpecialization ('builtin.module' operation)
+// Current Run Pass --tritongpu-load-mma-specialization
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [32, 1], warpsPerCTA = [4, 1], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1, 4], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}>

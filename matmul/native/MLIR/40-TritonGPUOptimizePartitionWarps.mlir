@@ -1,5 +1,6 @@
-// --tritongpu-optimize-partition-warps
-// TritonGPUOptimizePartitionWarps ('builtin.module' operation)
+// Next run Pass --tritongpu-schedule-loops
+// IR Dump After TritonGPUOptimizePartitionWarps ('builtin.module' operation)
+// Current Run Pass --tritongpu-optimize-partition-warps
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [32, 1], warpsPerCTA = [4, 1], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1, 4], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}>

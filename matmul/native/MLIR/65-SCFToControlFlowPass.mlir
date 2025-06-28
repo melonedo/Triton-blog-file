@@ -1,5 +1,6 @@
-// --convert-scf-to-cf
-// SCFToControlFlowPass ('builtin.module' operation)
+// Next run Pass --allocate-shared-memory
+// IR Dump After SCFToControlFlowPass ('builtin.module' operation)
+// Current Run Pass --convert-scf-to-cf
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [32, 1], warpsPerCTA = [4, 1], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1, 4], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}>

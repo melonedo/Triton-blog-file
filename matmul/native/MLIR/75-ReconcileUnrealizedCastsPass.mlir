@@ -1,5 +1,6 @@
-// --reconcile-unrealized-casts
-// ReconcileUnrealizedCastsPass ('builtin.module' operation)
+// Next run Pass --canonicalize
+// IR Dump After ReconcileUnrealizedCastsPass ('builtin.module' operation)
+// Current Run Pass --reconcile-unrealized-casts
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 #loc1 = loc(unknown)

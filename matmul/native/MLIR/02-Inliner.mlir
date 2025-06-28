@@ -1,5 +1,6 @@
-// --inline
-// Inliner ('builtin.module' operation)
+// Next run Pass --canonicalize
+// IR Dump After Inliner ('builtin.module' operation)
+// Current Run Pass --inline
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

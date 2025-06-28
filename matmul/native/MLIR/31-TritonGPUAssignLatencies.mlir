@@ -1,5 +1,6 @@
-// --tritongpu-assign-latencies
-// TritonGPUAssignLatencies ('builtin.module' operation)
+// Next run Pass --tritongpu-schedule-loops
+// IR Dump After TritonGPUAssignLatencies ('builtin.module' operation)
+// Current Run Pass --tritongpu-assign-latencies
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [32, 1], warpsPerCTA = [4, 1], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1, 4], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}>

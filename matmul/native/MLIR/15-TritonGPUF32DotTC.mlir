@@ -1,5 +1,6 @@
-// --tritongpu-F32DotTC
-// TritonGPUF32DotTC ('builtin.module' operation)
+// Next run Pass --triton-nvidia-gpu-plan-cta
+// IR Dump After TritonGPUF32DotTC ('builtin.module' operation)
+// Current Run Pass --tritongpu-F32DotTC
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [1, 32], warpsPerCTA = [2, 2], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1], threadsPerWarp = [32], warpsPerCTA = [4], order = [0]}>

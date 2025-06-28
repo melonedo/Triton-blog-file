@@ -10,7 +10,7 @@ pattern = re.compile(
 
 item = 'source'
 
-title = 'python ast'
+title = 'Python ast_to_ttir'
 
 # 打印每段内容
 for idx, match in enumerate(pattern.finditer(content)):
@@ -20,9 +20,9 @@ for idx, match in enumerate(pattern.finditer(content)):
     body = match.group("body").strip()
 
     fp = open(f"{idx+1:02d}-{item}.mlir", "w")
-    print(f"// {title}\n\n{body}", file=fp)
+    print(f"// Next run Pass --{pass_key}\n// IR Dump After {title}\n\n{body}", file=fp)
     item = f"{pass_name}"
-    title = f"--{pass_key}\n// {item} ({operation})"
+    title = f"{item} ({operation})\n// Current Run Pass --{pass_key}"
 
 fp = open(f"{idx+2:02d}-{item}.mlir", "w")
-print(f"// {title}\n", file=fp)
+print(f"// IR Dump After {title}\n", file=fp)

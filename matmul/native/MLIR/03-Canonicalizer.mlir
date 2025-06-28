@@ -1,5 +1,6 @@
-// --canonicalize
-// Canonicalizer ('tt.func' operation: @triton.language.standard.zeros____(0, 0)cconstexpr_128__(0, 1)cconstexpr_64__(1,)cconstexpr_fp32_)
+// Next run Pass --canonicalize
+// IR Dump After Canonicalizer ('tt.func' operation: @triton.language.standard.zeros____(0, 0)cconstexpr_128__(0, 1)cconstexpr_64__(1,)cconstexpr_fp32_)
+// Current Run Pass --canonicalize
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

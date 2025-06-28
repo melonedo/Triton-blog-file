@@ -1,5 +1,6 @@
-// --convert-nv-gpu-to-llvm
-// ConvertNVGPUToLLVM ('builtin.module' operation)
+// Next run Pass --convert-warp-specialize-to-llvm
+// IR Dump After ConvertNVGPUToLLVM ('builtin.module' operation)
+// Current Run Pass --convert-nv-gpu-to-llvm
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 #loc1 = loc(unknown)

@@ -1,5 +1,6 @@
-// --tritongpu-fuse-nested-loops
-// TritonGPUFuseNestedLoops ('builtin.module' operation)
+// Next run Pass --canonicalize
+// IR Dump After TritonGPUFuseNestedLoops ('builtin.module' operation)
+// Current Run Pass --tritongpu-fuse-nested-loops
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [32, 1], warpsPerCTA = [4, 1], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1, 4], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}>

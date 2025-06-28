@@ -1,4 +1,5 @@
-// python ast
+// Next run Pass --inline
+// IR Dump After Python ast_to_ttir
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

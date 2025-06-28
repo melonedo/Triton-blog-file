@@ -1,5 +1,6 @@
-// --convert-triton-to-tritongpu
-// ConvertTritonToTritonGPU ('builtin.module' operation)
+// Next run Pass --tritongpu-coalesce
+// IR Dump After ConvertTritonToTritonGPU ('builtin.module' operation)
+// Current Run Pass --convert-triton-to-tritongpu
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [1, 32], warpsPerCTA = [2, 2], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1], threadsPerWarp = [32], warpsPerCTA = [4], order = [0]}>

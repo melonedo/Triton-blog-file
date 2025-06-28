@@ -1,5 +1,6 @@
-// --triton-rewrite-tensor-pointer
-// TritonRewriteTensorPointer ('builtin.module' operation)
+// Next run Pass --canonicalize
+// IR Dump After TritonRewriteTensorPointer ('builtin.module' operation)
+// Current Run Pass --triton-rewrite-tensor-pointer
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

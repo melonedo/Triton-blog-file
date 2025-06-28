@@ -1,5 +1,6 @@
-// --canonicalize
-// Canonicalizer ('builtin.module' operation)
+// Next run Pass --cse
+// IR Dump After Canonicalizer ('builtin.module' operation)
+// Current Run Pass --canonicalize
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 #loc1 = loc(unknown)

@@ -1,5 +1,6 @@
-// --canonicalize
-// Canonicalizer ('tt.func' operation: @matrix_multiplication_kernel)
+// Next run Pass --canonicalize
+// IR Dump After Canonicalizer ('tt.func' operation: @matrix_multiplication_kernel)
+// Current Run Pass --canonicalize
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

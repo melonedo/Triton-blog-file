@@ -1,5 +1,6 @@
-// --triton-combine
-// TritonCombineOps ('builtin.module' operation)
+// Next run Pass --triton-reorder-broadcast
+// IR Dump After TritonCombineOps ('builtin.module' operation)
+// Current Run Pass --triton-combine
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

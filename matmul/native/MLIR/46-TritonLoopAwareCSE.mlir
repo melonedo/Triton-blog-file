@@ -1,5 +1,6 @@
-// --triton-loop-aware-cse
-// TritonLoopAwareCSE ('builtin.module' operation)
+// Next run Pass --tritongpu-prefetch
+// IR Dump After TritonLoopAwareCSE ('builtin.module' operation)
+// Current Run Pass --triton-loop-aware-cse
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [32, 1], warpsPerCTA = [4, 1], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1, 4], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}>

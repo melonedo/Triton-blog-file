@@ -1,5 +1,6 @@
-// --cse
-// CSE ('builtin.module' operation)
+// Next run Pass --symbol-dce
+// IR Dump After CSE ('builtin.module' operation)
+// Current Run Pass --cse
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 #loc1 = loc(unknown)

@@ -1,5 +1,6 @@
-// --symbol-dce
-// SymbolDCE ('builtin.module' operation)
+// Next run Pass --triton-loop-unroll
+// IR Dump After SymbolDCE ('builtin.module' operation)
+// Current Run Pass --symbol-dce
 
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 module {

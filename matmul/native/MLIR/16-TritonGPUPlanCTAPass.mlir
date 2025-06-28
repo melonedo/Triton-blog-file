@@ -1,5 +1,6 @@
-// --triton-nvidia-gpu-plan-cta
-// TritonGPUPlanCTAPass ('builtin.module' operation)
+// Next run Pass --tritongpu-remove-layout-conversions
+// IR Dump After TritonGPUPlanCTAPass ('builtin.module' operation)
+// Current Run Pass --triton-nvidia-gpu-plan-cta
 
 #blocked = #ttg.blocked<{sizePerThread = [1, 1], threadsPerWarp = [1, 32], warpsPerCTA = [2, 2], order = [1, 0]}>
 #blocked1 = #ttg.blocked<{sizePerThread = [1], threadsPerWarp = [32], warpsPerCTA = [4], order = [0]}>
