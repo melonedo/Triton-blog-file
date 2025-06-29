@@ -34,7 +34,7 @@ def matrix_multiplication_kernel(
         # 加载A和B的块
         a = tl.load(a_ptrs + n * BLOCK_SIZE_N * stride_an, mask=offs_n[None, :] < max_idx, other=0.0)
         b = tl.load(b_ptrs + n * BLOCK_SIZE_N * stride_bn, mask=offs_n[:, None] < max_idx, other=0.0)
-        # compute matrix multiplication and accumulate
+        # 计算a @ b，累加到 accumulator
         accumulator += tl.dot(a, b)
 
     # 将结果写回C
@@ -57,7 +57,7 @@ def solve(a_ptr: int, b_ptr: int, c_ptr: int, M: int, N: int, K: int):
         stride_am, stride_an,
         stride_bn, stride_bk,
         stride_cm, stride_ck,
-        BLOCK_SIZE_M=64,
+        BLOCK_SIZE_M=128,
         BLOCK_SIZE_K=64,
         BLOCK_SIZE_N=64,
     )
