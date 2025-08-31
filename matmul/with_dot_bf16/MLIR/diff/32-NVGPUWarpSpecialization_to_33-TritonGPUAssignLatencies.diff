@@ -1,0 +1,19 @@
+--- matmul/with_dot_bf16/MLIR/32-NVGPUWarpSpecialization.mlir
++++ matmul/with_dot_bf16/MLIR/33-TritonGPUAssignLatencies.mlir
+@@ -60,14 +60,14 @@
+       %59 = tt.splat %55 : i32 -> tensor<128x64xi32, #blocked> loc(#loc27)
+       %60 = tt.addptr %25, %59 : tensor<128x64x!tt.ptr<bf16>, #blocked>, tensor<128x64xi32, #blocked> loc(#loc27)
+       %61 = tt.broadcast %58 : tensor<1x64xi1, #blocked> -> tensor<128x64xi1, #blocked> loc(#loc28)
+-      %62 = tt.load %60, %61, %cst_0 : tensor<128x64x!tt.ptr<bf16>, #blocked> loc(#loc28)
++      %62 = tt.load %60, %61, %cst_0 {tt.latency = 2 : i32} : tensor<128x64x!tt.ptr<bf16>, #blocked> loc(#loc28)
+       %63 = tt.splat %56 : i32 -> tensor<64x1xi32, #blocked> loc(#loc29)
+       %64 = arith.cmpi slt, %27, %63 : tensor<64x1xi32, #blocked> loc(#loc29)
+       %65 = arith.muli %55, %arg7 : i32 loc(#loc30)
+       %66 = tt.splat %65 : i32 -> tensor<64x64xi32, #blocked> loc(#loc31)
+       %67 = tt.addptr %36, %66 : tensor<64x64x!tt.ptr<bf16>, #blocked>, tensor<64x64xi32, #blocked> loc(#loc31)
+       %68 = tt.broadcast %64 : tensor<64x1xi1, #blocked> -> tensor<64x64xi1, #blocked> loc(#loc32)
+-      %69 = tt.load %67, %68, %cst : tensor<64x64x!tt.ptr<bf16>, #blocked> loc(#loc32)
++      %69 = tt.load %67, %68, %cst {tt.latency = 2 : i32} : tensor<64x64x!tt.ptr<bf16>, #blocked> loc(#loc32)
+       %70 = ttg.convert_layout %62 : tensor<128x64xbf16, #blocked> -> tensor<128x64xbf16, #ttg.dot_op<{opIdx = 0, parent = #mma, kWidth = 2}>> loc(#loc28)
+       %71 = ttg.convert_layout %69 : tensor<64x64xbf16, #blocked> -> tensor<64x64xbf16, #ttg.dot_op<{opIdx = 1, parent = #mma, kWidth = 2}>> loc(#loc32)
+       %72 = tt.dot %70, %71, %arg10, inputPrecision = tf32 : tensor<128x64xbf16, #ttg.dot_op<{opIdx = 0, parent = #mma, kWidth = 2}>> * tensor<64x64xbf16, #ttg.dot_op<{opIdx = 1, parent = #mma, kWidth = 2}>> -> tensor<128x64xf32, #mma> loc(#loc33)
